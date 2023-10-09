@@ -79,7 +79,7 @@ const sequelize = new Sequelize('mysql://root:2aieiTQP41u5iu1NUTcY@containers-us
 
 const Books = sequelize.define('Book', {
   Judul: {
-    type: DataTypes.TEXT, // Mengubah tipe data menjadi TEXT
+    type: DataTypes.TEXT, // Mengubah tipe data menjadi string 
     allowNull: false,
   },
   Penulis: {
