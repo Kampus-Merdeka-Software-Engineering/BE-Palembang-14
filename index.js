@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
 
-const sequelize = new Sequelize('mysql://root:2aieiTQP41u5iu1NUTcY@containers-us-west-208.railway.app:6079/railway');
+const sequelize = new Sequelize('mysql://root:tqZX26t9KRjI6SHYrdMD@containers-us-west-145.railway.app:7826/railway');
 
 const Books = sequelize.define('Book', {
   Judul: {
@@ -79,7 +79,6 @@ const jalankanServer = async () => {
 
 jalankanServer();
 
-// Jangan lupa untuk menutup koneksi database ketika aplikasi selesai berjalan
 process.on('exit', () => {
   sequelize.close();
 });
